@@ -15,6 +15,10 @@ $(call inherit-product-if-exists, vendor/realme/sdm710-common/sdm710-common-vend
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_props.mk
 
